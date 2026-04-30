@@ -1,7 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><meta charset="UTF-8" /><title>3D Cube Explorer</title></head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Cube Explorer — Coach John's Math Tools</title>
+    <style>
+      .cj-header { background: linear-gradient(135deg,#1a237e,#3949ab); color: white; padding: 0; font-family: 'Segoe UI', sans-serif; }
+      .cj-header-main { display: flex; align-items: center; justify-content: space-between; padding: 18px 32px; gap: 20px; flex-wrap: wrap; }
+      .cj-logo img { height: 72px; width: auto; border-radius: 4px; display: block; }
+      .cj-center { flex: 1; text-align: center; }
+      .cj-center h1 { font-size: 1.75rem; font-weight: 800; letter-spacing: 0.5px; line-height: 1.2; margin: 0; }
+      .cj-center .cj-tag { font-size: 0.88rem; opacity: 0.88; margin-top: 4px; }
+      .cj-center .cj-site a { color: rgba(255,255,255,0.85); font-size: 0.82rem; margin-top: 5px; display: inline-block; text-decoration: underline; }
+      .cj-contact { text-align: right; font-size: 0.78rem; line-height: 1.8; opacity: 0.92; white-space: nowrap; }
+      .cj-contact a { color: rgba(255,255,255,0.85); text-decoration: none; }
+      .cj-contact a:hover { text-decoration: underline; }
+      .cj-contact-lbl { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; opacity: 0.75; margin-bottom: 4px; }
+      @media(max-width:680px) {
+        .cj-header-main { justify-content: center; text-align: center; }
+        .cj-contact { text-align: center; white-space: normal; }
+        .cj-logo img { height: 56px; }
+        .cj-center h1 { font-size: 1.4rem; }
+      }
+    </style>
+  </head>
   <body>
+    <header class="cj-header">
+      <div class="cj-header-main">
+        <div class="cj-logo">
+          <a href="https://www.learningoutofthebox.org" target="_blank" rel="noopener">
+            <img src="https://www.learningoutofthebox.org/wp-content/uploads/2021/04/website-header-logo-1_762a83d8fbae3135d9cf25c10506b73c-min.jpg" alt="Learning Out of the Box logo">
+          </a>
+        </div>
+        <div class="cj-center">
+          <h1>Coach John's Math Tools</h1>
+          <div class="cj-tag">for primary school maths</div>
+          <div class="cj-site"><a href="https://www.learningoutofthebox.org" target="_blank" rel="noopener">www.learningoutofthebox.org</a></div>
+        </div>
+        <div class="cj-contact">
+          <div class="cj-contact-lbl">Contact Us</div>
+          <div>📱 <a href="https://wa.me/6585037519">WhatsApp +65 8503 7519</a></div>
+          <div>✉️ <a href="mailto:admin@learningoutofthebox.org">admin@learningoutofthebox.org</a></div>
+        </div>
+      </div>
+    </header>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
